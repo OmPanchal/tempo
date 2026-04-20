@@ -1,5 +1,11 @@
 @import "tailwindcss";
 
+@theme {
+  --color-primary: #CD5D67;
+  --color-dark: #2F2F2F;
+  --color-light: #F2F2F2;
+}
+
 @font-face {
   font-family: WorkSansBold;
   src: url(../fonts/static/WorkSans-Bold.ttf);
@@ -7,18 +13,28 @@
 
 @font-face {
   font-family: WorkSansRegular;
+  src: url(../fonts/static/WorkSans-Regular.ttf);
+}
+
+@font-face {
+  font-family: WorkSansLight;
   src: url(../fonts/static/WorkSans-Light.ttf);
 }
 
 body {
   margin: 0;
+  background-color: theme(--color-light);
 }
 
 h1 {
-  font-family: WorkSansBold;
+  color: theme(--color-dark);
 }
 
 p {
-  font-family: WorkSansRegular;
+  color: theme(--color-dark);
 }
+
+
+
+
 /* CD5D67 */
